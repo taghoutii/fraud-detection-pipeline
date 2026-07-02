@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Data (never commit raw IEEE-CIS data — it's ~1.2GB and licensed via Kaggle)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Models (keep repo light; commit only a small final demo pipeline if you want)
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# MLflow
+mlruns/
+
+# Env / secrets
+.env
+kaggle.json
+
+# OS
+.DS_Store
+Thumbs.db
