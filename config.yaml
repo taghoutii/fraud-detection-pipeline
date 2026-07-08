@@ -1,0 +1,15 @@
+seed: 42
+data:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  time_col: TransactionDT #special because it controls time-based logic
+  target_col: isFraud #label
+split:
+  test_size: 0.2          # last 20% of time, NOT random
+cv:
+  n_splits: 5
+model:
+  threshold_search: true
+mlflow:
+  experiment_name: ieee-fraud-detection
